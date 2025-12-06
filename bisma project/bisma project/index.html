@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menstrual Health Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Menstrual Health Dashboard</h1>
+    <p>AI-Based Cycle Monitoring</p>
+  </header>
+
+  <div class="dashboard">
+
+    <!-- FORM CONTAINER -->
+    <div class="form-container">
+      <h2>Enter Cycle Details</h2>
+
+      <form id="predictForm">
+
+        <div class="input-row">
+          <div class="input-box">
+            <label>Number of Peak</label>
+            <input type="number" id="number_of_peak" required>
+          </div>
+
+          <div class="input-box">
+            <label>Age</label>
+            <input type="number" id="Age" required>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-box">
+            <label>Cycle Length</label>
+            <input type="number" id="Length_of_cycle" required>
+          </div>
+
+          <div class="input-box">
+            <label>Ovulation Day</label>
+            <input type="number" id="Estimated_day_of_ovulution" required>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-box">
+            <label>Leutal Phase</label>
+            <input type="number" id="Length_of_Leutal_Phase" required>
+          </div>
+
+          <div class="input-box">
+            <label>Menses Length</label>
+            <input type="number" id="Length_of_menses" required>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-box">
+            <label>Height (cm)</label>
+            <input type="number" id="Height" required>
+          </div>
+
+          <div class="input-box">
+            <label>Weight (kg)</label>
+            <input type="number" id="Weight" required>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-box">
+            <label>BMI</label>
+            <input type="number" id="BMI" required>
+          </div>
+
+          <div class="input-box">
+            <label>Mean Cycle Length</label>
+            <input type="number" id="Mean_of_length_of_cycle" required>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-box full">
+            <label>Menses Score</label>
+            <input type="number" id="Menses_score" required>
+          </div>
+        </div>
+
+        <button type="submit" class="predict-btn">Predict Health Status</button>
+      </form>
+    </div>
+
+    <!-- RESULT CARD -->
+    <div class="result-container">
+      <h2>Prediction Result</h2>
+      <div id="result">Fill the form & click Predict</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
